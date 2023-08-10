@@ -1,0 +1,29 @@
+{
+  "name": "simplechatapp",
+  "version": "1.0.0",
+  "description": "Simple chat",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManiRam63/chatmodule"
+  },
+  "author": "Mani Ram",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ManiRam63/chatmodule/issues"
+  },
+  "homepage": "https://github.com/ManiRam63/chatmodule#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "mongoose": "^7.4.2",
+    "nanoid": "^2.1.11",
+    "nodemon": "^1.14.3",
+    "socket.io": "^2.0.4",
+    "uuidv4": "^6.2.13"
+  }
+}
