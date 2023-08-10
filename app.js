@@ -25,7 +25,7 @@ server = app.listen(3000)
 const io = require("socket.io")(server);
 
 io.on('connection', (socket) => {
-	console.log('New user connected','sdfsdf',socket.id)
+	console.log('New user connected',socket.id)
     // Create function to send status
     sendStatus = function(s) {
       socket.emit("status", s);
@@ -38,7 +38,6 @@ io.on('connection', (socket) => {
 
         socket.username = data.username
       const users =  mongoose.user.find({username: { $regex: data.username } })
-      console.log(users,'dddddddddddd')
         const userObj  =  new user({
          _id:socket.id,
          username:data?.username
